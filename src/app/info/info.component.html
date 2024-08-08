@@ -1,0 +1,25 @@
+<h1>Cryptocurrency Data</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Symbol</th>
+      <th>Price (USD)</th>
+      <th>Market Cap (USD)</th>
+      <th>Supply</th>
+      <th>Explorer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let crypto of cryptos">
+      <td>{{ crypto.rank }}</td>
+      <td>{{ crypto.name }}</td>
+      <td>{{ crypto.symbol }}</td>
+      <td>{{ crypto.priceUsd | number: '1.2-2' }}</td>
+      <td>{{ crypto.marketCapUsd | number: '1.0-0' }}</td>
+      <td>{{ crypto.supply | number: '1.0-0' }}</td>
+      <td><a [href]="crypto.explorer" target="_blank">Explorer</a></td>
+    </tr>
+  </tbody>
+</table>
