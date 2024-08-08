@@ -1,27 +1,24 @@
-# Assignment
+# Angular Cryptocurrency Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+## Overview
 
-## Development server
+This Angular application provides a simple dashboard to view cryptocurrency data from a public API and submit user feedback through a contact form. The application includes the following features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Home Page**: A simple landing page with introductory text.
+2. **API Data Page**: A page that fetches and displays cryptocurrency data from a public API.
+3. **Contact Page**: A page with a reactive form to submit user feedback.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Client-Side Navigation**: 
+  - A navigation bar with links to Home, API Data, and Contact pages.
+  - Utilizes Angular Router for navigation.
 
-## Build
+- **API Data Page**: 
+  - Consumes data from a public API (https://api.coincap.io/v2/assets).
+  - Displays a table of cryptocurrency data including rank, name, symbol, price, market cap, supply, and a link to the explorer.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Contact Page**: 
+  - A reactive form to submit feedback.
+  - Includes form validation (required fields and valid email format).
+  - Displays validation errors and feedback to the user.
